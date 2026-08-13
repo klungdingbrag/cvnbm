@@ -1,1 +1,589 @@
-help
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV. Nusantara Building Material - Enterprise Building & Construction Solutions</title>
+    <meta name="description" content="Penyedia material bangunan dan jasa kontraktor terpercaya untuk rumah hunian dan konstruksi sesuai KBLI resmi.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#0F2C59',      /* Deep Corporate Navy */
+                            accent: '#2563EB',    /* Vibrant Blue */
+                            sky: '#E0F2FE',       /* Soft Blue Accent */
+                            greyBg: '#F8FAFC',    /* Ultra Clean Light Grey */
+                            greyDark: '#1E293B',  /* Slate Dark */
+                        }
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(15, 44, 89, 0.08)',
+                        'card-hover': '0 20px 30px -10px rgba(15, 44, 89, 0.12)',
+                        'mobile-drawer': '-10px 0 25px -5px rgba(0, 0, 0, 0.15)',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Smooth Mobile Menu Off-Canvas Transition */
+        #mobile-drawer {
+            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        #mobile-backdrop {
+            transition: opacity 0.35s ease-in-out, visibility 0.35s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-brand-greyBg text-slate-800 antialiased flex flex-col min-h-screen selection:bg-brand-accent selection:text-white">
+
+    <!-- Top Info Bar (Enterprise Style - Desktop) -->
+    <div class="bg-brand-blue text-slate-300 text-xs py-2 px-4 border-b border-blue-900/50 hidden sm:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <span><i class="fa-solid fa-location-dot text-brand-accent mr-2"></i>Jl. Lintas Selatan, Surorejan, Puring</span>
+                <span><i class="fa-solid fa-clock text-brand-accent mr-2"></i>Senin - Sabtu: 08:00 - 17:00 WIB</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="mailto:cvnbm@gmail.com" class="hover:text-white transition"><i class="fa-solid fa-envelope mr-1.5"></i>cvnbm@gmail.com</a>
+                <span>|</span>
+                <a href="tel:081234563843" class="hover:text-white transition"><i class="fa-solid fa-phone mr-1.5"></i>081234563843</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Brand Logo -->
+                <a href="#beranda" class="flex items-center space-x-3 group">
+                    <div class="w-11 h-11 bg-gradient-to-tr from-brand-blue to-brand-accent text-white flex items-center justify-center font-black text-xl rounded-xl shadow-md group-hover:scale-105 transition transform">
+                        NBM
+                    </div>
+                    <div>
+                        <span class="text-xl font-black text-brand-blue tracking-tight block leading-none">NUSANTARA</span>
+                        <span class="text-[10px] font-bold text-slate-400 tracking-[0.2em] uppercase">Building Material</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex space-x-7 text-xs font-bold uppercase tracking-wider text-slate-600">
+                    <a href="#beranda" class="hover:text-brand-accent transition py-2 border-b-2 border-transparent hover:border-brand-accent">Beranda</a>
+                    <a href="#profil" class="hover:text-brand-accent transition py-2 border-b-2 border-transparent hover:border-brand-accent">Profil</a>
+                    <a href="#target" class="hover:text-brand-accent transition py-2 border-b-2 border-transparent hover:border-brand-accent">Target</a>
+                    <a href="#produk" class="hover:text-brand-accent transition py-2 border-b-2 border-transparent hover:border-brand-accent">Produk</a>
+                    <a href="#proyek" class="hover:text-brand-accent transition py-2 border-b-2 border-transparent hover:border-brand-accent">Proyek</a>
+                    <a href="#galeri" class="hover:text-brand-accent transition py-2 border-b-2 border-transparent hover:border-brand-accent">Galeri</a>
+                    <a href="#mitra" class="hover:text-brand-accent transition py-2 border-b-2 border-transparent hover:border-brand-accent">Mitra</a>
+                    <a href="#kontak" class="hover:text-brand-accent transition py-2 border-b-2 border-transparent hover:border-brand-accent">Kontak</a>
+                </nav>
+
+                <!-- Header Action Button (Desktop) -->
+                <div class="hidden lg:flex items-center">
+                    <a href="https://wa.me/6281234563843" target="_blank" class="bg-brand-accent hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition shadow-md hover:shadow-lg flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Us
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-800 hover:text-brand-accent focus:outline-none p-2 rounded-lg" aria-label="Open Mobile Navigation">
+                        <i class="fa-solid fa-bars-staggered text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE OFF-CANVAS NAVIGATION SYSTEM -->
+    <!-- 1. Dark Overlay Backdrop -->
+    <div id="mobile-backdrop" class="fixed inset-0 bg-slate-900/60 z-50 backdrop-blur-sm opacity-0 invisible lg:hidden"></div>
+
+    <!-- 2. Sliding Side Drawer (Sliding from Right) -->
+    <aside id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-[82%] max-w-sm bg-white z-50 lg:hidden transform translate-x-full shadow-mobile-drawer flex flex-col justify-between overflow-y-auto">
+        <!-- Drawer Header -->
+        <div class="p-6 border-b border-slate-100 flex items-center justify-between bg-brand-greyBg">
+            <div class="flex items-center space-x-2.5">
+                <div class="w-9 h-9 bg-brand-blue text-white flex items-center justify-center font-black text-sm rounded-lg">
+                    NBM
+                </div>
+                <div>
+                    <span class="text-base font-black text-brand-blue tracking-tight block leading-none">NUSANTARA</span>
+                    <span class="text-[9px] font-bold text-slate-400 tracking-widest uppercase">Building Material</span>
+                </div>
+            </div>
+            <button id="mobile-close-btn" class="w-9 h-9 bg-white border border-slate-200 rounded-full flex items-center justify-center text-slate-500 hover:text-brand-blue focus:outline-none" aria-label="Close Mobile Navigation">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu Links -->
+        <nav class="p-6 space-y-1 flex-grow">
+            <a href="#beranda" class="mobile-link flex items-center justify-between py-3 px-4 rounded-xl text-slate-700 font-bold text-sm hover:bg-brand-sky hover:text-brand-blue transition">
+                <span>Beranda</span> <i class="fa-solid fa-chevron-right text-xs opacity-40"></i>
+            </a>
+            <a href="#profil" class="mobile-link flex items-center justify-between py-3 px-4 rounded-xl text-slate-700 font-bold text-sm hover:bg-brand-sky hover:text-brand-blue transition">
+                <span>Profil Perusahaan</span> <i class="fa-solid fa-chevron-right text-xs opacity-40"></i>
+            </a>
+            <a href="#target" class="mobile-link flex items-center justify-between py-3 px-4 rounded-xl text-slate-700 font-bold text-sm hover:bg-brand-sky hover:text-brand-blue transition">
+                <span>Target Pasar</span> <i class="fa-solid fa-chevron-right text-xs opacity-40"></i>
+            </a>
+            <a href="#produk" class="mobile-link flex items-center justify-between py-3 px-4 rounded-xl text-slate-700 font-bold text-sm hover:bg-brand-sky hover:text-brand-blue transition">
+                <span>Produk & Jasa</span> <i class="fa-solid fa-chevron-right text-xs opacity-40"></i>
+            </a>
+            <a href="#proyek" class="mobile-link flex items-center justify-between py-3 px-4 rounded-xl text-slate-700 font-bold text-sm hover:bg-brand-sky hover:text-brand-blue transition">
+                <span>Proyek Berjalan</span> <i class="fa-solid fa-chevron-right text-xs opacity-40"></i>
+            </a>
+            <a href="#galeri" class="mobile-link flex items-center justify-between py-3 px-4 rounded-xl text-slate-700 font-bold text-sm hover:bg-brand-sky hover:text-brand-blue transition">
+                <span>Galeri Kegiatan</span> <i class="fa-solid fa-chevron-right text-xs opacity-40"></i>
+            </a>
+            <a href="#mitra" class="mobile-link flex items-center justify-between py-3 px-4 rounded-xl text-slate-700 font-bold text-sm hover:bg-brand-sky hover:text-brand-blue transition">
+                <span>Mitra Bisnis</span> <i class="fa-solid fa-chevron-right text-xs opacity-40"></i>
+            </a>
+            <a href="#kontak" class="mobile-link flex items-center justify-between py-3 px-4 rounded-xl text-slate-700 font-bold text-sm hover:bg-brand-sky hover:text-brand-blue transition">
+                <span>Kontak & Lokasi</span> <i class="fa-solid fa-chevron-right text-xs opacity-40"></i>
+            </a>
+        </nav>
+
+        <!-- Drawer Footer (Quick Contacts & CTA) -->
+        <div class="p-6 border-t border-slate-100 bg-brand-greyBg space-y-4">
+            <div class="space-y-2 text-xs text-slate-600">
+                <p class="flex items-center gap-2"><i class="fa-solid fa-phone text-brand-accent"></i> 081234563843</p>
+                <p class="flex items-center gap-2"><i class="fa-solid fa-envelope text-brand-accent"></i> cvnbm@gmail.com</p>
+            </div>
+            <a href="https://wa.me/6281234563843" target="_blank" class="w-full bg-brand-accent hover:bg-blue-700 text-white py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider text-center flex items-center justify-center gap-2 shadow-md">
+                <i class="fa-brands fa-whatsapp text-base"></i> Hubungi Kami Via WA
+            </a>
+        </div>
+    </aside>
+
+    <main class="flex-grow">
+        <!-- 1. HERO SECTION -->
+        <section id="beranda" class="relative bg-brand-blue text-white py-24 sm:py-28 lg:py-36 overflow-hidden">
+            <div class="absolute inset-0 z-0 opacity-20 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?auto=format&fit=crop&w=1920&q=80');"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-blue via-brand-blue/90 to-transparent z-0"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="max-w-3xl">
+                    <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md text-brand-sky border border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-full mb-6">
+                        <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span> Standardized KBLI Legalized
+                    </div>
+                    <h1 class="text-3xl sm:text-6xl font-black tracking-tight leading-tight mb-6">
+                        Membangun Struktur <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-sky-200">Masa Depan</span>
+                    </h1>
+                    <p class="text-base sm:text-xl text-slate-300 mb-8 sm:mb-10 leading-relaxed font-normal">
+                        CV. Nusantara Building Material menyediakan rantai pasok material konstruksi komprehensif dan layanan kontraktor independen berstandar tinggi.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-3.5">
+                        <a href="#produk" class="bg-brand-accent hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-xs sm:text-sm tracking-wider uppercase text-center shadow-lg hover:shadow-brand-accent/50 transition">
+                            Katalog & Layanan
+                        </a>
+                        <a href="#kontak" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white px-8 py-4 rounded-xl font-bold text-xs sm:text-sm tracking-wider uppercase text-center backdrop-blur-md transition">
+                            Konsultasi Proyek
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS BANNER -->
+        <section class="bg-white border-b border-slate-200 py-6 sm:py-8 relative z-20 -mt-6 sm:-mt-8 max-w-6xl mx-4 sm:mx-auto rounded-2xl shadow-glass px-4 sm:px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center divide-x-0 md:divide-x divide-slate-100">
+                <div class="p-1 sm:p-2">
+                    <div class="text-2xl sm:text-3xl font-black text-brand-blue">100%</div>
+                    <div class="text-[10px] sm:text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Sesuai KBLI Resmi</div>
+                </div>
+                <div class="p-1 sm:p-2">
+                    <div class="text-2xl sm:text-3xl font-black text-brand-blue">High Grade</div>
+                    <div class="text-[10px] sm:text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Standar Material</div>
+                </div>
+                <div class="p-1 sm:p-2">
+                    <div class="text-2xl sm:text-3xl font-black text-brand-blue">Tepat Waktu</div>
+                    <div class="text-[10px] sm:text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Sistem Pengerjaan</div>
+                </div>
+                <div class="p-1 sm:p-2">
+                    <div class="text-2xl sm:text-3xl font-black text-brand-blue">Terpercaya</div>
+                    <div class="text-[10px] sm:text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Mitra Kontraktor</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. PROFIL -->
+        <section id="profil" class="py-16 sm:py-24 bg-brand-greyBg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                    <div class="lg:col-span-6">
+                        <span class="text-brand-accent font-extrabold text-xs tracking-widest uppercase mb-2 block">Profil Perusahaan</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mb-6 tracking-tight">Solusi Konstruksi Terpadu Berlandaskan Integritas</h2>
+                        <p class="text-slate-600 mb-4 leading-relaxed text-sm sm:text-base">
+                            <strong>CV. Nusantara Building Material (CVNBM)</strong> berdedikasi menjadi entitas bisnis utama dalam pemenuhan material bangunan dan eksekusi jasa kontraktor bangunan hunian serta struktur tertentu di Indonesia.
+                        </p>
+                        <p class="text-slate-600 leading-relaxed text-sm sm:text-base mb-8">
+                            Kami menggabungkan efisiensi rantai pasok material berstandar mutu teruji dengan tenaga terampil untuk memastikan kelancaran setiap tahapan pengerjaan fisik Anda.
+                        </p>
+
+                        <div class="flex items-center gap-4 bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                            <div class="w-12 h-12 bg-brand-sky text-brand-blue rounded-lg flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-certificate"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Legalitas Operasional KBLI</h4>
+                                <p class="text-xs text-slate-500">Menjamin kepatuhan regulasi dan standar teknis dalam seluruh transaksi.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-6 space-y-6">
+                        <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm">
+                            <div class="w-10 h-10 bg-brand-blue text-white rounded-lg flex items-center justify-center font-bold mb-4">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2">Visi Perusahaan</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                                Menjadi penyedia pasokan material bangunan dan mitra kontraktor tepercaya berstandar profesional yang mengutamakan mutu, ketepatan, dan keberlanjutan.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm">
+                            <div class="w-10 h-10 bg-brand-accent text-white rounded-lg flex items-center justify-center font-bold mb-4">
+                                <i class="fa-solid fa-bullseye"></i>
+                            </div>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2">Misi Utama</h3>
+                            <ul class="text-slate-600 text-xs sm:text-sm space-y-2">
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-circle-check text-brand-accent mt-0.5"></i>
+                                    <span>Menyediakan produk material bangunan terlengkap dengan harga kompetitif.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-circle-check text-brand-accent mt-0.5"></i>
+                                    <span>Menghadirkan pengerjaan kontraktor presisi untuk hunian dan bangunan publik.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. TARGET PASAR -->
+        <section id="target" class="py-16 sm:py-24 bg-white border-y border-slate-200/60">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+                    <span class="text-brand-accent font-extrabold text-xs tracking-widest uppercase mb-2 block">Strategi Pasar</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Segmen Target Utama</h2>
+                    <p class="text-slate-500 mt-2 text-xs sm:text-sm">Memberikan nilai tambah yang terfokus bagi berbagai kelompok klien.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                    <div class="bg-brand-greyBg p-6 sm:p-8 rounded-2xl border border-slate-200">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white text-brand-blue rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-6 shadow-sm">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <h3 class="text-base sm:text-lg font-bold text-slate-900 mb-2">Hunian Residensial</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Masyarakat umum yang membutuhkan pasokan bahan bangunan retail/grosir serta layanan pembangunan rumah tinggal baru maupun renovasi total.</p>
+                    </div>
+
+                    <div class="bg-brand-greyBg p-6 sm:p-8 rounded-2xl border border-slate-200">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white text-brand-blue rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-6 shadow-sm">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <h3 class="text-base sm:text-lg font-bold text-slate-900 mb-2">Developer & Komersial</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Pengembang perumahan atau area bisnis yang memerlukan kepastian rantai pasok material dalam volume konsisten dan tepat waktu.</p>
+                    </div>
+
+                    <div class="bg-brand-greyBg p-6 sm:p-8 rounded-2xl border border-slate-200">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white text-brand-blue rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-6 shadow-sm">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+                        <h3 class="text-base sm:text-lg font-bold text-slate-900 mb-2">Sub-Kontraktor & Instansi</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Mitra kerja proyek sarana fasilitas umum atau konstruksi bangunan spesifik yang membutuhkan jaminan kualifikasi KBLI resmi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PRODUK & JASA -->
+        <section id="produk" class="py-16 sm:py-24 bg-brand-greyBg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+                    <span class="text-brand-accent font-extrabold text-xs tracking-widest uppercase mb-2 block">Portofolio Solusi</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Produk & Jasa Unggulan</h2>
+                    <p class="text-slate-500 mt-2 text-xs sm:text-sm">Klasifikasi pasokan dan pengerjaan konstruksi resmi CVNBM.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                        <div class="w-12 h-12 bg-blue-50 text-brand-accent rounded-xl flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base mb-2">Material Struktural</h3>
+                        <p class="text-slate-500 text-xs leading-relaxed">Semen, besi beton standar SNI, pasir pasang, bata ringan, koral, dan agregat pondasi.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                        <div class="w-12 h-12 bg-blue-50 text-brand-accent rounded-xl flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base mb-2">Finishing & Atap</h3>
+                        <p class="text-slate-500 text-xs leading-relaxed">Rangka baja ringan, genteng metal/keramik, lantai keramik/granit, dan cat dinding eksterior.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                        <div class="w-12 h-12 bg-blue-50 text-brand-accent rounded-xl flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-house-chimney-window"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base mb-2">Kontraktor Hunian</h3>
+                        <p class="text-slate-500 text-xs leading-relaxed">Jasa pembangunan rumah tinggal modern dari tahap perencanaan, struktur, hingga finishing (*turnkey*).</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                        <div class="w-12 h-12 bg-blue-50 text-brand-accent rounded-xl flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-city"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base mb-2">Konstruksi Spesifik</h3>
+                        <p class="text-slate-500 text-xs leading-relaxed">Pengerjaan struktur gedung komersial atau fasilitas fisik terdaftar pada standar KBLI resmi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PROYEK BERJALAN -->
+        <section id="proyek" class="py-16 sm:py-24 bg-white border-t border-slate-200/60">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16">
+                    <div>
+                        <span class="text-brand-accent font-extrabold text-xs tracking-widest uppercase mb-2 block">Monitoring Lapangan</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Proyek Berjalan</h2>
+                    </div>
+                    <p class="text-slate-500 text-xs sm:text-sm mt-2 md:mt-0 max-w-md">Aktivitas pengerjaan dan pasokan proyek aktif yang sedang ditangani oleh tim CVNBM.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+                    <div class="bg-brand-greyBg rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                        <div class="p-6 sm:p-8">
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="inline-flex items-center gap-1.5 bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span> On Progress (75%)
+                                </span>
+                                <span class="text-xs font-semibold text-slate-400">Puring, Kebumen</span>
+                            </div>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2">Konstruksi Rumah Minimalis Type 70</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm mb-6">Pengerjaan struktur lantai dua, pemasangan baja ringan, dan instalasi plumbing.</p>
+                            <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
+                                <div class="bg-brand-accent h-full w-3/4"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-brand-greyBg rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                        <div class="p-6 sm:p-8">
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="inline-flex items-center gap-1.5 bg-blue-100 text-brand-blue text-xs font-bold px-3 py-1 rounded-full">
+                                    <i class="fa-solid fa-truck-fast text-[10px]"></i> Pengadaan Pasokan
+                                </span>
+                                <span class="text-xs font-semibold text-slate-400">Jalur Lintas Selatan</span>
+                            </div>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2">Suplai Material Kawasan Ruko Komersial</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm mb-6">Pengiriman bertahap semen berkepadatan tinggi, besi ulir SNI, dan bata ringan.</p>
+                            <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
+                                <div class="bg-brand-blue h-full w-1/2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. GALERI -->
+        <section id="galeri" class="py-16 sm:py-24 bg-brand-greyBg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+                    <span class="text-brand-accent font-extrabold text-xs tracking-widest uppercase mb-2 block">Dokumentasi</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Galeri Kegiatan & Produk</h2>
+                    <p class="text-slate-500 mt-2 text-xs sm:text-sm">Gambaran operasional gudang, pengiriman, dan pengerjaan di lapangan.</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+                    <div class="group relative aspect-square bg-slate-300 rounded-xl sm:rounded-2xl overflow-hidden shadow-sm">
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-blue/90 via-transparent to-transparent flex items-end p-3 sm:p-4">
+                            <span class="text-white text-[10px] sm:text-xs font-bold">Stok & Gudang Material</span>
+                        </div>
+                    </div>
+
+                    <div class="group relative aspect-square bg-slate-300 rounded-xl sm:rounded-2xl overflow-hidden shadow-sm">
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-blue/90 via-transparent to-transparent flex items-end p-3 sm:p-4">
+                            <span class="text-white text-[10px] sm:text-xs font-bold">Proses Pembangunan Hunian</span>
+                        </div>
+                    </div>
+
+                    <div class="group relative aspect-square bg-slate-300 rounded-xl sm:rounded-2xl overflow-hidden shadow-sm">
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-blue/90 via-transparent to-transparent flex items-end p-3 sm:p-4">
+                            <span class="text-white text-[10px] sm:text-xs font-bold">Armada Pengiriman Material</span>
+                        </div>
+                    </div>
+
+                    <div class="group relative aspect-square bg-slate-300 rounded-xl sm:rounded-2xl overflow-hidden shadow-sm">
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-blue/90 via-transparent to-transparent flex items-end p-3 sm:p-4">
+                            <span class="text-white text-[10px] sm:text-xs font-bold">Hasil Akhir Kontraktor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. MITRA BISNIS -->
+        <section id="mitra" class="py-16 bg-white border-y border-slate-200/60">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <span class="text-slate-400 font-extrabold text-[10px] sm:text-xs tracking-widest uppercase mb-6 block">Kemitraan & Rantai Pasok Usaha</span>
+                <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-12 opacity-80">
+                    <div class="flex items-center gap-2 text-slate-700 font-black text-sm sm:text-base">
+                        <i class="fa-solid fa-industry text-brand-accent"></i> PRODUSEN SEMEN
+                    </div>
+                    <div class="flex items-center gap-2 text-slate-700 font-black text-sm sm:text-base">
+                        <i class="fa-solid fa-shield-halved text-brand-accent"></i> SUPPLIER BAJA
+                    </div>
+                    <div class="flex items-center gap-2 text-slate-700 font-black text-sm sm:text-base">
+                        <i class="fa-solid fa-paint-roller text-brand-accent"></i> INDUSTRI CAT
+                    </div>
+                    <div class="flex items-center gap-2 text-slate-700 font-black text-sm sm:text-base">
+                        <i class="fa-solid fa-truck-moving text-brand-accent"></i> LOGISTIK LOKAL
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. KONTAK & PETA -->
+        <section id="kontak" class="py-16 sm:py-24 bg-brand-greyBg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
+                    <div class="lg:col-span-5">
+                        <span class="text-brand-accent font-extrabold text-xs tracking-widest uppercase mb-2 block">Hubungi Tim Kami</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4 sm:mb-6">Konsultasikan Proyek & Kebutuhan Anda</h2>
+                        <p class="text-slate-600 text-xs sm:text-sm mb-8 leading-relaxed">
+                            Kunjungi kantor operasional kami atau hubungi kontak resmi untuk penawaran harga material dan konsultasi rencana pembangunan.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white text-brand-blue shadow-sm border border-slate-200 rounded-xl flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-location-dot text-base sm:text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm">Alamat Operasional</h4>
+                                    <p class="text-xs text-slate-600 mt-1 leading-relaxed">Jl. Lintas Selatan, Surorejan, Puring, Kabupaten Kebumen, Jawa Tengah</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white text-brand-blue shadow-sm border border-slate-200 rounded-xl flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-envelope text-base sm:text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm">Email Resmi</h4>
+                                    <a href="mailto:cvnbm@gmail.com" class="text-xs text-brand-accent hover:underline mt-1 block">cvnbm@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white text-brand-blue shadow-sm border border-slate-200 rounded-xl flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-phone text-base sm:text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm">Telepon / WhatsApp</h4>
+                                    <a href="tel:081234563843" class="text-xs text-brand-accent hover:underline mt-1 block">081234563843</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Container -->
+                    <div class="lg:col-span-7">
+                        <div class="w-full h-80 sm:h-full min-h-[300px] bg-slate-200 rounded-2xl overflow-hidden shadow-sm border border-slate-300">
+                            <iframe 
+                                title="Peta Lokasi CV Nusantara Building Material"
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                loading="lazy" 
+                                allowfullscreen 
+                                referrerpolicy="no-referrer-when-downgrade" 
+                                src="https://maps.google.com/maps?q=Jl.+Lintas+Selatan,+Surorejan,+Puring&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-blue text-white border-t border-blue-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center space-x-3">
+                    <div class="w-9 h-9 bg-brand-accent text-white flex items-center justify-center font-black text-base rounded-lg">
+                        NBM
+                    </div>
+                    <div>
+                        <span class="text-base sm:text-lg font-black tracking-tight block leading-none">CV. NUSANTARA BUILDING MATERIAL</span>
+                        <span class="text-[9px] sm:text-[10px] text-slate-400 tracking-wider">Enterprise Material Supplier & Construction Services</span>
+                    </div>
+                </div>
+                <div class="text-[11px] sm:text-xs text-slate-400 text-center md:text-right">
+                    &copy; 2026 CV. Nusantara Building Material. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MOBILE OFF-CANVAS JAVASCRIPT HANDLER -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileCloseBtn = document.getElementById('mobile-close-btn');
+        const mobileDrawer = document.getElementById('mobile-drawer');
+        const mobileBackdrop = document.getElementById('mobile-backdrop');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function openMobileMenu() {
+            mobileDrawer.classList.remove('translate-x-full');
+            mobileBackdrop.classList.remove('opacity-0', 'invisible');
+            mobileBackdrop.classList.add('opacity-100', 'visible');
+            document.body.style.overflow = 'hidden'; // Lock scrolling
+        }
+
+        function closeMobileMenu() {
+            mobileDrawer.classList.add('translate-x-full');
+            mobileBackdrop.classList.remove('opacity-100', 'visible');
+            mobileBackdrop.classList.add('opacity-0', 'invisible');
+            document.body.style.overflow = ''; // Unlock scrolling
+        }
+
+        mobileMenuBtn.addEventListener('click', openMobileMenu);
+        mobileCloseBtn.addEventListener('click', closeMobileMenu);
+        mobileBackdrop.addEventListener('click', closeMobileMenu);
+
+        // Auto close drawer when any navigation link is clicked
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+    </script>
+</body>
+</html>
+
